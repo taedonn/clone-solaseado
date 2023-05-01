@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>태양의 도시 솔라시도</title>
+    <link rel="icon" href="../img/logo_favicon.png"/>
+    <!-- 제이쿼리 -->
+    <script src="../js/jquery.min.js"></script>
+    <script src="../js/jquery.mousewheel.min.js"></script>
+    <!-- 제이쿼리 AOS 플러그인 -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <!-- 자바스크립트 -->
+    <script src="../js/layout.js"></script>
+    <!-- Material Icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- css -->
+    <link rel="stylesheet" type="text/css" href="../css/reset.css">
+    <link rel="stylesheet" type="text/css" href="../css/base.css">
+    <link rel="stylesheet" type="text/css" href="../css/layout.css">
+</head>
+<body>
+    <script>
+        //제이쿼리 AOS 플러그인
+        AOS.init(); 
+    </script>
+    <header style="background: white; border-bottom: 1px solid #ddd;">
+        <h1>
+            <a href="../index.html"><img src="../img/logo.png" alt="로고"></a>
+        </h1>
+        <div class="gnb">
+            <ul class="nav">
+                <li>
+                    <a href="#">사업개요</a>
+                    <ul class="submenu1" id="submenu1-1"></a>
+                        <li>
+                            <a href="./vision.html">
+                                비전
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./overview.html">
+                                도시소개
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./development.html">
+                                개발현황
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./target2030.html">
+                                TARGET2030
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">사업투자</a>
+                    <ul class="submenu1" id="submenu1-2"></a>
+                        <li>
+                            <a href="./residentialarea.html">
+                                주택단지
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./re100.html">
+                                RE100 산업단지
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./smartfarm.html">
+                                스마트팜
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./leisure.html">
+                                관광레져
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">소통과 교류</a>
+                    <ul class="submenu1" id="submenu1-3"></a>
+                        <li>
+                            <a href="./news.html" style="padding-left: 100px">
+                                뉴스
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./smartideasharing.html">
+                                SMART IDEA SHARING
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./employment.html">
+                                채용
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+            <ul class="sales">
+                <li>
+                    <a href="#">분양정보</a>
+                    <ul class="submenu2">
+                        <li>
+                            <a href="#">
+                                분양공고
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                공지사항
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                자료실
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <div class="sidemenu">
+            <input type="checkbox" name="lang" id="lang">
+            <label for="lang">
+                <span>KR<div class="triangle"></div></span>
+                <span>EN<div class="triangle"></div></span>
+            </label>
+            <a href="#">FAMILY
+                <img src="../img/bosung-symbol.png" alt="보성로고">
+            </a>
+        </div>
+        <div class="submenucover"></div>
+        <div class="tabletmenu">
+            <input type="checkbox" id="menu">
+            <label for="menu">
+                <img src="../img/btn_mobile_menu_s.png">
+                <img src="../img/close.png">
+            </label>
+            <div class="tabletsubmenu">
+                <ul>
+                    <li>
+                        <ul class="t-submenu">
+                            <a href="#">사업개요</a>
+                            <li><a href="./vision.html">비전</a></li>
+                            <li><a href="./overview.html">도시소개</a></li>
+                            <li><a href="./development.html">개발현황</a></li>
+                            <li><a href="./target2030.html">TARGET2030</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <ul class="t-submenu">
+                            <a href="#">사업투자</a>
+                            <li><a href="./residentialarea.html">주택단지</a></li>
+                            <li><a href="./re100.html">RE100 산업단지</a></li>
+                            <li><a href="./smartfarm.html">스마트팜</a></li>
+                            <li><a href="./leisure.html">관광레저</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <ul class="t-submenu">
+                            <a href="#">소통과 교류</a>
+                            <li><a href="./news.html">뉴스</a></li>
+                            <li><a href="./smartideasharing.html">SMART IDEA SHARING</a></li>
+                            <li><a href="./employment.html">채용</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <ul class="t-submenu">
+                            <a href="#">분양정보</a>
+                            <li><a href="#">분양공고</a></li>
+                            <li><a href="#">공지사항</a></li>
+                            <li><a href="#">자료실</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <div id="wrap">
+        <section class="ra-1">
+            <div>
+                <h2 data-aos="fade-up" data-aos-duration="700">
+                    호수, 바다,<br>
+                    아름다운 정원
+                </h2>
+                <h3 data-aos="fade-up" data-aos-duration="700" data-aos-delay="50">
+                    수려한 자연환경과 함께 청정한 신재생에너지를 기반으로 첨단 도시 인프라를 갖춰 나가고 있는 솔라시도에서,
+                    단독주택용지부터 저,중,고밀 공동주택에 이르기까지 다양한 주택사업 용지를 선보입니다.
+                </h3>
+                <h3 data-aos="fade-up" data-aos-duration="700" data-aos-delay="100">
+                    획일적인 도시계획에서 벗어나, 아름다운 자연지형과 생태적인 환경을 그대로 살리는 혁신적인 개발방식,
+                    미래의 스마트기술을 고려한 인프라 계획 등 솔라시도는 명품 주거단지로 탄생할 수 있는 충분한 여건을 갖추었습니다.
+                </h3>
+                <h3 data-aos="fade-up" data-aos-duration="700" data-aos-delay="150">
+                    원격근무제를 도입하는 기업의 증가, 워라벨(Work and Life Balance)에 대한 사회적 기대감,
+                    공유경제의 확산이 불러올 주거 트렌드 변화 속에서 새로운 블루오션을 찾고자 하는 모든 분에게
+                    솔라시도는 참신한 사업기회가 될 것으로 확신합니다.
+                </h3>
+                <h3 data-aos="fade-up" data-aos-duration="700" data-aos-delay="200">
+                    골프장, 마리나, 스마트팜 등의 주변 개발사업과 결합된 사업을 비롯하여,
+                    조합형 사업, 임대사업, 동호인주택과 같은 다양한 주택사업의 파트너가 되겠습니다.
+                </h3>
+                <h4 data-aos="fade-up" data-aos-duration="700" data-aos-delay="250">
+                    2021년 가을,
+                </h4>
+                <h5 data-aos="fade-up" data-aos-duration="700" data-aos-delay="300">
+                    솔라시도의 첫번째 주택단지가 당신을 찾아갑니다.<br>
+                    18홀 골프장의 아름다움과 품격,<br>
+                    대규모 커뮤니티 센터의 고급스러움과 편리함<br>
+                    아름다운 조망과 차별화된 서비스를 갖춘<br>
+                    프리미엄 주거공간 2,500세대가<br>
+                    특별한 당신을 기다립니다.
+                </h5>
+            </div>
+        </section>
+        <section class="ra-2">
+            <img src="https://i.ibb.co/b546DJX/cover-residence.jpg" data-aos="zoom-in-up" data-aos-duration="700">
+            <div>
+                <div class="ra-2a">
+                    <div>
+                        <h2 data-aos="fade-up" data-aos-duration="700" data-aos-delay="0">
+                            대한민국<br>
+                            명품 레저주택의<br>
+                            첫 출발
+                        </h2>
+                        <h3 data-aos="fade-up" data-aos-duration="700" data-aos-delay="100">
+                            거실에서 바라보는 바다와 호수,<br>
+                            그리고 명품 골프장의 아름다운 조경<br>
+                            내집 앞 정원과 다양한 산책 코스를 통해 만나는 물길과 숲길.<br>
+                            삶의 쉼표과 느낌표가 필요한 당신에게 솔라시도가<br>
+                            대한민국 명품 레저 주택단지를 선보입니다.
+                        </h3>
+                        <div class="ra-2b" data-aos="fade-up" data-aos-duration="700" data-aos-delay="200">
+                            <h4>
+                                집을 나서면<br>
+                                바로 만나는 바다와 호수로<br>
+                                둘러싼 자연과 정원
+                            </h4>
+                            <h4>
+                                특별한 장소에서<br>
+                                만나는 새로운<br>
+                                일상과 경험
+                            </h4>
+                            <h4>
+                                대도시의 번잡함을<br>
+                                잠시 미뤄두지만,<br>
+                                생활의 편리함은 그대로
+                            </h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <img src="https://i.ibb.co/1qpV7B1/cover-residence3.jpg">
+        </section>
+        <section class="ra-3">
+            <div>
+                <div class="ra-3txt">
+                    <h2 data-aos="fade-up" data-aos-duration="700" data-aos-delay="0">
+                        이국적인 풍광과
+                    </h2>
+                    <h2 data-aos="fade-up" data-aos-duration="700" data-aos-delay="50">
+                        어울리는 유럽풍의
+                    </h2>
+                    <h2 data-aos="fade-up" data-aos-duration="700" data-aos-delay="100">
+                        테라스 주택
+                    </h2>
+                    <h4 data-aos="fade-up" data-aos-duration="700" data-aos-delay="150">
+                        유럽풍의 고품격 외관, 레저과 거주를 모두 고려한 내부 설계 컨셉,<br>
+                        골프장의 프리미엄 조경과 연계된 명품 조경.<br>
+                        국내 어디서도 볼 수 없는 프리미엄 레저 주거공간이 탄생됩니다.
+                    </h4>
+                </div>
+                <div>
+                    <img src="https://i.ibb.co/gZqrvrz/residential-img11.jpg" data-aos="fade-in" data-aos-duration="1000">
+                    <img src="https://i.ibb.co/BcFBX3z/residential-img12.jpg" data-aos="fade-in" data-aos-duration="1000">
+                    <img src="https://i.ibb.co/rQs8Qgb/residential-img13.jpg" data-aos="fade-in" data-aos-duration="1000">
+                    <img src="https://i.ibb.co/LxdK589/residential-img14.jpg" data-aos="fade-in" data-aos-duration="1000">
+                </div>
+            </div>
+            <div style="margin-top: 0;">
+                <div class="ra-3txt">
+                    <h2 data-aos="fade-up" data-aos-duration="700" data-aos-delay="0">
+                        커뮤니티에서 누리는
+                    </h2>
+                    <h2 data-aos="fade-up" data-aos-duration="700" data-aos-delay="50">
+                        새로운 라이프스타일 경험
+                    </h2>
+                    <h4 data-aos="fade-up" data-aos-duration="700" data-aos-delay="100">
+                        솔라시도에서는 새로운 레저 라이프스타일을 위한 다양한 시설과 서비스를 제공합니다.
+                        수영장, 휘트니스, 사우나 등 실내 스포츠 시설과 게스트하우스, 다양한 동호회 활동을 통해
+                        늘 몸과 마음의 컨디션을 최상으로 유지하실 수 있습니다.
+                        각종 편의시설과 상업 시설을 통해 새로운 인생의 활력을 얻으실 수 있습니다.
+                    </h4>
+                </div>
+                <div class="ra-4">
+                    <div>
+                        <img src="https://i.ibb.co/GCF1tw4/residential-layout2.png">
+                        <h4>
+                            커뮤니티 센터 예상 조감도
+                        </h4>
+                    </div>
+                    <div class="ra-4b">
+                        <div>
+                            <img src="https://i.ibb.co/8dVC5yr/residential-img05.jpg">
+                            <h4>
+                                생활문화 서비스
+                            </h4>
+                            <h5>
+                                케이터링 서비스 / 청소, 정원 관리 / 도서관, 문화시설
+                            </h5>
+                        </div>
+                        <div>
+                            <img src="https://i.ibb.co/b5qfkyT/residential-img06.jpg">
+                            <h4>
+                                스포츠/레저 서비스
+                            </h4>
+                            <h5>
+                                피트니스 센터 / 수영장 / 사우나,마사지
+                            </h5>
+                        </div>
+                        <div>
+                            <img src="https://i.ibb.co/vP6whYk/residential-img07.jpg">
+                            <h4>
+                                헬스케어 서비스
+                            </h4>
+                            <h5>
+                                원격의료 건강상담 / 자가 검진 시설 / 병원 예약 지원 / 운동 프로그램
+                            </h5>
+                        </div>
+                        <div>
+                            <img src="https://i.ibb.co/QCDsv93/residential-img08.jpg">
+                            <h4>
+                                온택트 서비스
+                            </h4>
+                            <h5>
+                                비즈니스 센터 / 원격 교육 / 무인 배송
+                            </h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <footer>
+        <div>
+            <h2>
+                <img src="../img/solaseado-w.png">
+                <span>
+                    © 2020 Solaseado.
+                </span>
+            </h2>
+            <div class="footer-info">
+                <h4>
+                    <span>본점</span>
+                    (59014) 전라남도 해남군 산이면 관광레저로 1998 (산이면)
+                </h4>
+                <h4>
+                    <span>서울</span>
+                    (05836) 서울 송파구 법원로 11길 12(문정동) 한양타워 9층
+                </h4>
+                <h5 style="padding-top:10px;">
+                    <span class="footer-txt">투자문의</span>
+                    1644-4228<span class="footer-line"></span><span class="footer-txt">TEL</span>061-812-8114<span class="footer-line"></span><span class="footer-txt">FAX</span>061-812-8115
+                </h5>
+                <h5>
+                    <span class="footer-txt">사업시행자</span>서남해안기업도시개발(주)<span class="footer-line"></span>사업자 등록번호<span class="footer-txt">408-81-74044</span>
+                </h5>
+                <h3>
+                    <a href="#">개인정보처리방침</a><span class="footer-line"></span></span><a href="#">투자문의</a>
+                    <span class="footer-sns">
+                        <a href="https://www.facebook.com/Solaseado_솔라시도-2386427968066241" style="margin-right: 8px;">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgba(255, 255, 255, 0.5)" class="bi bi-facebook" viewBox="0 0 16 16">
+                                <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"/>
+                            </svg>
+                        </a>
+                        <a href="https://www.youtube.com/channel/UCC00d2CHe2WHX4k-8EMQ2ng">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgba(255, 255, 255, 0.5)" class="bi bi-youtube" viewBox="0 0 16 16">
+                                <path d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.007 2.007 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.007 2.007 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31.4 31.4 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.007 2.007 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A99.788 99.788 0 0 1 7.858 2h.193zM6.4 5.209v4.818l4.157-2.408L6.4 5.209z"/>
+                            </svg>
+                        </a>
+                    </span>
+                </h3>
+            </div>
+            <ul class="familysite">
+                FAMILY SITE
+                <li>
+                    <ul class="fs-submenu">
+                        <li><a href="#">보성그룹</a></li>
+                        <li><a href="#">솔라시도CC</a></li>
+                        <li><a href="#">한양</a></li>
+                        <li><a href="#">한양수자인</a></li>
+                        <li><a href="#">보성산업</a></li>
+                        <li><a href="#">코리아에셋매니지먼트</a></li>
+                        <li><a href="#">파인힐스</a></li>
+                        <li><a href="#">파인비치</a></li>
+                        <li><a href="#">해원에스티</a></li>
+                        <li><a href="#">해원앰에스씨</a></li>
+                        <li><a href="#">여수국제항만</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </footer>
+</body>
+</html>

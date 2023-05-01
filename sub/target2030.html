@@ -1,0 +1,662 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>태양의 도시 솔라시도</title>
+    <link rel="icon" href="../img/logo_favicon.png"/>
+    <!-- 제이쿼리 -->
+    <script src="../js/jquery.min.js"></script>
+    <script src="../js/jquery.mousewheel.min.js"></script>
+    <!-- 제이쿼리 AOS 플러그인 -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <!-- 자바스크립트 -->
+    <script src="../js/layout.js"></script>
+    <!-- Material Icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- css -->
+    <link rel="stylesheet" type="text/css" href="../css/reset.css">
+    <link rel="stylesheet" type="text/css" href="../css/base.css">
+    <link rel="stylesheet" type="text/css" href="../css/layout.css">
+</head>
+<body>
+    <script>
+        //제이쿼리 AOS 플러그인
+        AOS.init(); 
+    </script>
+    <header style="background: white; border-bottom: 1px solid #ddd;">
+        <h1>
+            <a href="../index.html"><img src="../img/logo.png" alt="로고"></a>
+        </h1>
+        <div class="gnb">
+            <ul class="nav">
+                <li>
+                    <a href="#">사업개요</a>
+                    <ul class="submenu1" id="submenu1-1"></a>
+                        <li>
+                            <a href="./vision.html">
+                                비전
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./overview.html">
+                                도시소개
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./development.html">
+                                개발현황
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./target2030.html">
+                                TARGET2030
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">사업투자</a>
+                    <ul class="submenu1" id="submenu1-2"></a>
+                        <li>
+                            <a href="./residentialarea.html">
+                                주택단지
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./re100.html">
+                                RE100 산업단지
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./smartfarm.html">
+                                스마트팜
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./leisure.html">
+                                관광레져
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">소통과 교류</a>
+                    <ul class="submenu1" id="submenu1-3"></a>
+                        <li>
+                            <a href="./news.html" style="padding-left: 100px">
+                                뉴스
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./smartideasharing.html">
+                                SMART IDEA SHARING
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./employment.html">
+                                채용
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+            <ul class="sales">
+                <li>
+                    <a href="#">분양정보</a>
+                    <ul class="submenu2">
+                        <li>
+                            <a href="#">
+                                분양공고
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                공지사항
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                자료실
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <div class="sidemenu">
+            <input type="checkbox" name="lang" id="lang">
+            <label for="lang">
+                <span>KR<div class="triangle"></div></span>
+                <span>EN<div class="triangle"></div></span>
+            </label>
+            <a href="#">FAMILY
+                <img src="../img/bosung-symbol.png" alt="보성로고">
+            </a>
+        </div>
+        <div class="submenucover"></div>
+        <div class="tabletmenu">
+            <input type="checkbox" id="menu">
+            <label for="menu">
+                <img src="../img/btn_mobile_menu_s.png">
+                <img src="../img/close.png">
+            </label>
+            <div class="tabletsubmenu">
+                <ul>
+                    <li>
+                        <ul class="t-submenu">
+                            <a href="#">사업개요</a>
+                            <li><a href="./vision.html">비전</a></li>
+                            <li><a href="./overview.html">도시소개</a></li>
+                            <li><a href="./development.html">개발현황</a></li>
+                            <li><a href="./target2030.html">TARGET2030</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <ul class="t-submenu">
+                            <a href="#">사업투자</a>
+                            <li><a href="./residentialarea.html">주택단지</a></li>
+                            <li><a href="./re100.html">RE100 산업단지</a></li>
+                            <li><a href="./smartfarm.html">스마트팜</a></li>
+                            <li><a href="./leisure.html">관광레저</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <ul class="t-submenu">
+                            <a href="#">소통과 교류</a>
+                            <li><a href="./news.html">뉴스</a></li>
+                            <li><a href="./smartideasharing.html">SMART IDEA SHARING</a></li>
+                            <li><a href="./employment.html">채용</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <ul class="t-submenu">
+                            <a href="#">분양정보</a>
+                            <li><a href="#">분양공고</a></li>
+                            <li><a href="#">공지사항</a></li>
+                            <li><a href="#">자료실</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <div class="target2030">
+        <div>
+            <div class="maskimg">
+                <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 612 792" style="enable-background:new 0 0 612 792;" xml:space="preserve">
+                    <defs>
+                        <clipPath id="mask">
+                            <path>
+                                <animate id="animate1" dur="10s" repeatCount="indefinite" attributeName="d"
+                                values="M28.66,380.48C28.66,380.48,28.66,380.48,28.66,380.48c12.38,42.26,39.58,79.06,72.23,108.6
+                                c23.75,21.49,50.88,39.97,69.36,66.13c14.93,21.15,23.73,46.71,41.95,65.09c29.76,30,76.48,33.48,118.73,33.09
+                                c43.28-0.4,86.97-3.01,128.56-14.98c16.86-4.85,33.41-11.29,48.08-20.91c50.98-33.45,70.63-99.23,72.81-160.17
+                                c2.17-60.94-9.2-122.07-3.08-182.74c2.15-21.32,6.35-43.52-0.93-63.67c-8.88-24.57-33.7-40.73-59.34-45.77
+                                c-54.6-10.73-107.83,18.49-162.25,19.01c-36.97,0.36-70.96-8.24-105.01-21.9c-27.43-11.01-53.96-20.51-84.05-17.55
+                                c-46.26,4.55-90.11,25.76-114.28,66.46C22.05,260.62,12.44,325.13,28.66,380.48z;
+                                M28.66,380.48C28.66,380.48,28.66,380.48,28.66,380.48c12.38,42.26,8.42,83.4,49.24,99.92
+                                c85.79,34.72,24.42,92.3,42.89,118.47c14.93,21.15,73.18,3.06,91.41,21.43c29.76,30,86.85,5.36,118.73,33.09
+                                c44.16,38.41,86.97-3.01,128.56-14.98c16.86-4.85,36.43-7.79,48.08-20.91C612,499.81,485.25,492.32,487.43,431.38
+                                c2.18-60.94,83.74-96.13,89.86-156.8c2.15-21.32,6.35-43.52-0.93-63.67c-8.88-24.57-72.08-76.21-146.12-80.81
+                                c-55.53-3.45-72.44,95.48-126.85,96c-36.97,0.36-26.33-39.33-53.62-63.85c-18.16-16.32-53.96-20.51-84.05-17.55
+                                c-46.26,4.55-27.9,72.36-52.07,113.06C84.27,307.22,12.44,325.13,28.66,380.48z;
+                                M28.66,380.48C28.66,380.48,28.66,380.48,28.66,380.48c12.38,42.26,39.58,79.06,72.23,108.6
+                                c23.75,21.49,50.88,39.97,69.36,66.13c14.93,21.15,23.73,46.71,41.95,65.09c29.76,30,76.48,33.48,118.73,33.09
+                                c43.28-0.4,86.97-3.01,128.56-14.98c16.86-4.85,33.41-11.29,48.08-20.91c50.98-33.45,70.63-99.23,72.81-160.17
+                                c2.17-60.94-9.2-122.07-3.08-182.74c2.15-21.32,6.35-43.52-0.93-63.67c-8.88-24.57-33.7-40.73-59.34-45.77
+                                c-54.6-10.73-107.83,18.49-162.25,19.01c-36.97,0.36-70.96-8.24-105.01-21.9c-27.43-11.01-53.96-20.51-84.05-17.55
+                                c-46.26,4.55-90.11,25.76-114.28,66.46C22.05,260.62,12.44,325.13,28.66,380.48z"/>
+                            </path>
+                        </clipPath>
+                    </defs>
+                </svg>
+                <img src="https://i.ibb.co/CPnTzsR/target2030-cover3.jpg">
+                <div class="txt2030">
+                    <h2 data-aos="fade-up" data-aos-duration="700">
+                        <span>TARGET</span>
+                        <span>2030</span>
+                    </h2>
+                    <h4 data-aos="fade-up" data-aos-duration="700" data-aos-delay="100">
+                        GARDEN CITY<br>
+                        RE100 CITY<br>
+                        SELF-DRIVING CITY<br>
+                        ON-TACT CITY
+                    </h4>
+                </div>
+            </div>
+        </div>
+        <div class="t1">
+            <div>
+                <div class="t1-1">
+                    <div>
+                        <h2 data-aos="fade-up" data-aos-duration="700">
+                            정원
+                        </h2>
+                        <h3 data-aos="fade-up" data-aos-duration="700" data-aos-delay="100">
+                            어디서나 문을 열면 눈앞에 정원이 펼쳐지는,<br>
+                            상상이 현실이 되는 city in the Garden !
+                        </h3>
+                        <h4 data-aos="fade-up" data-aos-duration="700" data-aos-delay="200">
+                            녹지와 청정 수변을 아우르는 천혜의 자연을 내 집 앞부터 누릴 수 있는 
+                            정원도시 솔라시도는 도시 일부를 정원으로 조성하는 일반적인 도시에서의 
+                            정원조성과는 다르게, 9개의 거점 정원과 이를 연결하는 도로(Green)와 
+                            수로(Blue)로 네트워크를 연결하여 도시 전체를 정원으로 느낄 수 있도록 
+                            조성하고 있습니다. 또한 개발 진행 중인 산이정원은 어린이들이 마음껏 
+                            뛰놀 수 있는 국내 최초의 어린이정원으로 남녀노소 동심으로 돌아갈 수 
+                            있는 기회를 제공하고자 합니다. 태양의 정원은 신재생에너지 발전소 내에 
+                            정원을 만들어서 기피 시설이었던 발전소를 시민들이 즐길 수 있는 명소로 
+                            조성되었습니다. 사람들이 진정 원하는 것이 무엇인지를 깨닫고 기존의 틀을 
+                            깨는 것을 두려워하지 않는 것이 정원도시의 도전입니다.
+                        </h4>
+                        <h5 data-aos="fade-up" data-aos-duration="700" data-aos-delay="100">
+                            정원도시 솔라시도는
+                        </h5>
+                        <div class="t1txt"  data-aos="fade-up" data-aos-duration="700" data-aos-delay="150">
+                            <h2>S</h2>
+                            <span></span>
+                            <h3>sustainable</h3>
+                            <h4>
+                                저영향개발에 의해 건강하고 지속가능
+                            </h4>
+                        </div>
+                        <div class="t1txt" data-aos="fade-up" data-aos-duration="700" data-aos-delay="200">
+                            <h2>M</h2>
+                            <span></span>
+                            <h3>multifunction</h3>
+                            <h4>
+                                도시 그린인프라로서 다기능
+                            </h4>
+                        </div>
+                        <div class="t1txt" data-aos="fade-up" data-aos-duration="700" data-aos-delay="250">
+                            <h2>A</h2>
+                            <span></span>
+                            <h3>activities</h3>
+                            <h4>
+                                사람들의 참여와 다양한 활동
+                            </h4>
+                        </div>
+                        <div class="t1txt" data-aos="fade-up" data-aos-duration="700" data-aos-delay="300">
+                            <h2>R</h2>
+                            <span></span>
+                            <h3>relation</h3>
+                            <h4>
+                                공간과 녹지가 연결
+                            </h4>
+                        </div>
+                        <div class="t1txt" data-aos="fade-up" data-aos-duration="700" data-aos-delay="350">
+                            <h2>T</h2>
+                            <span></span>
+                            <h3>technology</h3>
+                            <h4>
+                                편리하고 안전한 스마트 공원
+                            </h4>
+                        </div>
+                    </div>
+                    <div data-aos="fade-down" data-aos-duration="700">
+                        <img src="https://i.ibb.co/HXpx9fP/garden-video-thumb.jpg">
+                        <div class="video-play">
+                            <span>
+                                <img src="../img/play-button.png">
+                            </span>
+                        </div>
+                        <h2>
+                            해남 간척지에 핀 초대형 눈꽃
+                        </h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="t1info">
+            <div class="t1-2">
+                <h2>
+                    솔라시도 3대 네트워크
+                </h2>
+                <div>
+                    <div class="t1-2a">
+                        <h2 style="color: #80aebc;">
+                            블루네트워크
+                        </h2>
+                        <h4>
+                            서해와 금호호, 영암호가 만나는 지점에 위치해 삼면이 
+                            물로 둘러싸인 솔라시도에서는 수로가 핵심 생태축을 담당한다. 
+                            솔라시도에서는 단절된 물길을 연결하고 순환토록 하여 국내 
+                            유일의 갯골(수로) 도시를 완성하고자 한다. 저영향개발기법(LID)의 
+                            적용으로 빗물이 대지로 잘 스밀 것이며, 이는 수로를 통해 호수로 
+                            흘러 들어가 풍부한 생태경관으로 이어지는 물순환 도시를 형성할 것이다.
+                        </h4>
+                    </div>
+                    <div class="t1-2a">
+                        <h2 style="color: #76bf88;">
+                            그린네트워크
+                        </h2>
+                        <h4>
+                            솔라시도에서는 자연지형을 온전히 보전함은 물론 훼손된 숲이 있다면 
+                            되살리고 이어붙여 도시를 타고 흐르는 녹지의 리듬을 만들고 있다. 
+                            수변의 잔존녹지들은 도로녹지와 연결되면서 순환되는 녹지의 띠를 형성한다. 
+                            이 연결녹지들은 도시 곳곳에 혈관처럼 퍼져있는데 솔라시도의 대표 경관 
+                            포인트마다 조성되는 아홉 개의 거점정원 ‘구성구경’과 더불어 단계별로 
+                            완성될 예정이다. 솔라시도의 그린네트워크는 공간과 계절에 따라 다양한 
+                            경관스펙트럼을 연출하며 도시의 정체성을 내보일 것이다.
+                        </h4>
+                    </div>
+                    <div class="t1-2a">
+                        <h2 style="color: #af9b7e;">
+                            휴면네트워크
+                        </h2>
+                        <h4>
+                            완만하고 부드럽게 이어지는 구릉들 사이로 우아한 선을 그리는 도로는 
+                            더 이상 차량의 전유물이 아니다. 우리는 도시의 척추와도 같은 기존의 
+                            군도를 보행특화가로 및 중앙공원화하여 휴먼네트워크의 중심축을 담당하는 
+                            공공 선형녹지로 조성하고있다. 솔라시도의 휴먼네트워크는 
+                            그린인프라-커뮤니티-라이프스타일로서의 ‘정원’의 본질에 대한 이야기이며, 
+                            또한 정원과 함께하는 인간의 삶에 대한 고민의 집약체다. 솔라시도에서는 
+                            내 집 앞의 정원이 전체 도시로 연결된다. 도보 뿐만 아니라 자전거와 퍼스널 
+                            모빌리티(PM), 자율주행차를 통해서 건강하고 자유로이 정원도시를 누리게 될 
+                            날이 머지 않았다.
+                        </h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="t1-video">
+            <iframe width="1280" height="720" src="https://www.youtube.com/embed/RduvJcaj78M" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <span><img src="../img/letter-x.png"></span>
+        </div>
+        <div class="t2">
+            <div data-aos="fade-in" data-aos-duration="1000">
+                <img src="https://i.ibb.co/82q8j0w/img-network.jpg">
+            </div>
+        </div>
+        <div class="t3">
+            <div>
+                <div class="t3-1">
+                    <h2 data-aos="fade-up" data-aos-duration="700">
+                        RE100
+                    </h2>
+                    <h3 data-aos="fade-up" data-aos-duration="700" data-aos-delay="100">
+                        지구의 미래를 생각하는 우리는<br>
+                        신재생에너지를 생산하고 소비하는<br>
+                        Green Value 실현
+                    </h3>
+                    <h4 data-aos="fade-up" data-aos-duration="700" data-aos-delay="200">
+                        우리에게 아직 생소한 RE100 캠페인은 모든 산업에서 탄소 배출을 제로화 
+                        하는 생산과 소비의 혁신을 지향하는 전세계적 움직임입니다. 솔라시도 또한 
+                        Supply side에서 태양과 바람을 이용한 신재생에너지를 대규모로 가장 효율적으로 
+                        생산하고, 수열, 그린수소등 다양한 친환경에너지를 직접 발굴하고, 
+                        신재생에너지가 필요한 여러 기업과 생산 부문에 직접 공급이 가능한 
+                        인프라를 조성합니다. Demand Side에서 이산화탄소의 직접 배출을 감소시키고 
+                        에너지 소비를 저감 시킬 수 있도록 친환경 건축물, TOD 기반 도시설계 및 
+                        내연기관차 차단구역을 포함한 도시계획을 진행하고 있습니다.
+                    </h4>
+                </div>
+                <div class="t3_iframe_wrap">
+                    <!-- 유튜브 iframe API 설정 -->
+                    <script>
+                        var tag = document.createElement('script');
+                        tag.src = "https://www.youtube.com/iframe_api";
+                        var firstScriptTag = document.getElementsByTagName('script')[0];
+                        firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
+                        var player;
+                        function onYouTubeIframeAPIReady(){
+                            player = new YT.Player('yt_player',{
+                                width:'100%',
+                                videoId:'OQXS164fACM',
+                                playerVars:{ 'autoplay':1,'playlist':'OQXS164fACM','loop':1,'quality':'high','controls':0 },
+                                events:{
+                                    'onReady':onPlayerReady,
+                                    'onError':onPlayerError
+                                }
+                            });
+                        }
+
+                        function onPlayerReady(e){
+                            e.target.mute();
+                            e.target.playVideo();
+                        }
+
+                        function onPlayerError(e){
+                            console.log("error");
+                            location.reload();
+                        }
+                    </script>
+                    <div class="video_over"></div>
+                    <div id="yt_player"></div>
+                </div>
+            </div>
+            <div>
+                <h2>RE100도시 솔라시도의 3가지 목표</h2>
+                <div class="t3-2">
+                    <div>
+                        <h2><span>01</span>RE100 도시</h2>
+                        <h4>
+                            RE100 산업단지의 배후도시 및 문화휴양 도시 기능 보유, 
+                            탄소제로 리빙랩으로 미래지향적 RE100 모범 도시
+                        </h4>
+                    </div>
+                    <div>
+                        <h2><span>02</span>RE100 산업단지</h2>
+                        <h4>
+                            재생에너지클러스터의 전력을 활용한 공단(Plug & Play). 
+                            일자리 창출 및 지역활성화 거점
+                        </h4>
+                    </div>
+                    <div>
+                        <h2><span>03</span>재생에너지 클러스터</h2>
+                        <h4>
+                            RE100 도시와 RE100 산업단지에 공급하는 재생에너지 발전단지
+                        </h4>
+                    </div>
+                </div>
+                <img src="https://i.ibb.co/Hz9xyTF/target-re100.jpg" data-aos="fade-in" data-aos-duration="1000">
+            </div>
+        </div>
+        <div class="t3 t4">
+            <div>
+                <div class="t3-1">
+                    <h2 data-aos="fade-up" data-aos-duration="700">
+                        교통
+                    </h2>
+                    <h3 data-aos="fade-up" data-aos-duration="700" data-aos-delay="100">
+                        자율차 도시 솔라시도는<br>
+                        안전하고 편리한 자율주행경험을 앞서 체험할 수 있는<br>
+                        First Mover
+                    </h3>
+                    <h4 data-aos="fade-up" data-aos-duration="700" data-aos-delay="200">
+                        안전과 청정환경을 최고의 가치로 구현하는 솔라시도의 교통 대전제 역시 도보친화도시입니다.
+                        이를 위해 솔라시도에서는 차량주행공간보다 보행공간의 중요성을 강조하고 
+                        기존 도시의 보행과 차량으로 양분되었던 교통수단은 스마트 모빌리티의 활용으로 
+                        경계를 허물고 있습니다.
+                        이렇듯 솔라시도는 걷기 좋은 환경과 다양한 모빌리티를 이용하여 도시민에게 
+                        “이동의 즐거움”을 선사하고자 합니다.
+                        현재의 자율주행 기술을 고려할 때, 자율주행을 통한 도시의 발전은 대도시 
+                        보다는 중소도시에서 실현가능 합니다. 복잡한 도심이 아닌 한적한 도시에서의 
+                        시범운행을 통하여 자율주행 기술을 고도화 할 수 있습니다.
+                    </h4>
+                </div>
+                <div data-aos="fade-in" data-aos-duration="1000">
+                    <img src="https://i.ibb.co/0Vj2sj3/target07.jpg">
+                    <h3>복합환승센터</h3>
+                    <h4>※ 출처 : Future of Mobility - Urban Strategy</h4>
+                </div>
+            </div>
+            <div class="t4-1">
+                <div class="t4-1a">
+                    <div>
+                        <h2>솔라시도 교통체계 가이드라인</h2>
+                        <div class="t4-1c">
+                            <img src="../img/car.png">
+                            <h4>
+                                탄소차량의 도시 내 진입은 차단하고 도시 진입부에 환승 주차장을 운영
+                            </h4>
+                        </div>
+                        <div class="t4-1c">
+                            <img src="../img/speedometer.png">
+                            <h4>
+                                다양한 개인형 모빌리티 경험을 위해 차량의 속도를 적극 제한
+                            </h4>
+                        </div>
+                        <div class="t4-1c">
+                            <img src="../img/rocket-ship.png">
+                            <h4>
+                                모빌리티 혁신 기업들과의 협업를 통해, 도시민에게 혁신적인 모빌리티 경험제공
+                            </h4>
+                        </div>
+                    </div>
+                    <div>
+                        <h2>솔라시도 교통 핵심가치</h2>
+                        <div class="t4-1d">
+                            <h4><span>Safe</span>걷기 좋고 안전한 도시</h4>
+                            <h4><span>Eco-friendly</span>깨끗한 도시</h4>
+                            <h4><span>Inclusive</span>차별없이 이동할 수 있는 도시</h4>
+                            <h4><span>Seamless</span>이동이 단절되지 않는 도시</h4>
+                            <h4><span>Connected</span>초연결로 자유로운 도시</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="t4-1b" id="t4-1b">
+                    <div>
+                        <img src="https://i.ibb.co/WpqWXj3/target08.jpg" data-aos="fade-in" data-aos-duration="1000">
+                        <h3>
+                            전기차와 수직이착륙 무인기
+                        </h3>
+                        <h4>
+                            미국 제너럴 모터스(GM)가 12일(현지시간) 선보인 미래형 캐딜락 콘셉트 카 2종. 
+                            사진은 GM이 이날 세계 최대 정보기술(IT)·가전 박람회인 ‘CES 2021’에서 공개한 
+                            전기차와 수직이착륙 무인기(VTOL)의 동영상을 캡처한 것이다. (연합뉴스)
+                        </h4>
+                        <a href="https://www.sedaily.com/NewsVIew/22H93NR49C" target="_blank">
+                            <div class="t4-link">
+                                <h4>출처 바로가기</h4>
+                                <img src="../img/link.png">
+                                <img src="../img/link-hover.png">
+                            </div>
+                        </a>
+                    </div>
+                    <img src="https://i.ibb.co/6F6ZWkh/target09.jpg" data-aos="fade-in" data-aos-duration="1000">
+                </div>
+            </div>
+        </div>
+        <div class="t3 t5">
+            <div id="t5-1">
+                <div class="t3-1">
+                    <h2 data-aos="fade-up" data-aos-duration="700">
+                        온택트
+                    </h2>
+                    <h3 data-aos="fade-up" data-aos-duration="700" data-aos-delay="100">
+                        물 흐르듯이 연결되는<br>
+                        seamless digital city
+                    </h3>
+                    <h4 data-aos="fade-up" data-aos-duration="700" data-aos-delay="200">
+                        포스트 코로나 시대 비대면 생활은 예상보다 더 빨리 우리에게 일상이 되었습니다. 
+                        비대면 생활을 가능하게하는 디지털기술은 물리적 거리를 무색하게 할 만큼 자연스럽게 
+                        우리의 삶을 연결해 줍니다. 솔라시도에서는 획일적이고 복잡한 도시의 삶이 아닌 
+                        자기주체적이고 자연스러운 삶을 도시민이 영위할 수 있도록 기술과 데이터를 활용한 
+                        시스템을 구축함으로써 보다 포용적 혁신적 회복탄력적 환경을 구현하는 도시를 표방합니다. 
+                        우리는 건설•정보통신기술 등이 융•복합되는 도시기반시설을 계획하고 멀지 않은 미래에 
+                        펼쳐질 로봇과 드론이 융합되는 삶을 준비하고 있습니다. 언제 어디서나 연결되는 
+                        정보통신기술과 네트워크 기술로 도시민들은 시간과 장소에 구애 받지 않고 원하는 
+                        정보를 구할 수 있으며, 여가를 즐길 수 있기에 솔라시도 도시민들의 삶의 양식은 다른 
+                        도시와는 완전히 차별화를 이뤄낼 것입니다
+                    </h4>
+                </div>
+                <img src="https://i.ibb.co/9VfYyS9/target10.jpg" data-aos="fade-in" data-aos-duration="1000">
+            </div>
+            <div class="t5-2">
+                <div>
+                    <img src="https://i.ibb.co/1rk6yyF/target12.jpg" data-aos="fade-in" data-aos-duration="1000">
+                    <h3>키이테크 지능형 코딩 로봇 '클릭봇(Clicbot)'</h3>
+                    <h4>중국 교육용 로봇업체 키이테크(KEYi Tech)는 레고처럼 조립이 가능한 지능형 코딩 로봇 ‘클릭봇(Clicbot)’</h4>
+                    <a href="http://www.irobotnews.com/news/articleView.html?idxno=23637" target="_blank">
+                        <div class="t4-link">
+                            <h4>출처 바로가기</h4>
+                            <img src="../img/link.png">
+                            <img src="../img/link-hover.png">
+                        </div>
+                    </a>
+                </div>
+                <div>
+                    <img src="https://i.ibb.co/VpYy58H/target11.jpg" data-aos="fade-in" data-aos-duration="1000">
+                    <h3>누와 로보틱스 케비에어(Kebbi Air)</h3>
+                    <h4>
+                        누와 로보틱스(Nuwa Robotics)는 다기능 로봇 ‘케비 에어(Kebbi Air)’를 
+                        선보였다. 케비 에어는 교육용 로봇과 동반자 역할을 수행하도록 설계됐다. 
+                        컴퓨터 모니터 스크린을 갖춰 동영상,게임,학습 기능을 제공하고 노래와 춤으로 
+                        아이를 즐겁게 해준다.
+                    </h4>
+                    <a href="http://www.irobotnews.com/news/articleView.html?idxno=23637" target="_blank">
+                        <div class="t4-link">
+                            <h4>출처 바로가기</h4>
+                            <img src="../img/link.png">
+                            <img src="../img/link-hover.png">
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div>
+            <h2>
+                <img src="../img/solaseado-w.png">
+                <span>
+                    © 2020 Solaseado.
+                </span>
+            </h2>
+            <div class="footer-info">
+                <h4>
+                    <span>본점</span>
+                    (59014) 전라남도 해남군 산이면 관광레저로 1998 (산이면)
+                </h4>
+                <h4>
+                    <span>서울</span>
+                    (05836) 서울 송파구 법원로 11길 12(문정동) 한양타워 9층
+                </h4>
+                <h5 style="padding-top:10px;">
+                    <span class="footer-txt">투자문의</span>
+                    1644-4228<span class="footer-line"></span><span class="footer-txt">TEL</span>061-812-8114<span class="footer-line"></span><span class="footer-txt">FAX</span>061-812-8115
+                </h5>
+                <h5>
+                    <span class="footer-txt">사업시행자</span>서남해안기업도시개발(주)<span class="footer-line"></span>사업자 등록번호<span class="footer-txt">408-81-74044</span>
+                </h5>
+                <h3>
+                    <a href="#">개인정보처리방침</a><span class="footer-line"></span></span><a href="#">투자문의</a>
+                    <span class="footer-sns">
+                        <a href="https://www.facebook.com/Solaseado_솔라시도-2386427968066241" style="margin-right: 8px;">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgba(255, 255, 255, 0.5)" class="bi bi-facebook" viewBox="0 0 16 16">
+                                <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"/>
+                            </svg>
+                        </a>
+                        <a href="https://www.youtube.com/channel/UCC00d2CHe2WHX4k-8EMQ2ng">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgba(255, 255, 255, 0.5)" class="bi bi-youtube" viewBox="0 0 16 16">
+                                <path d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.007 2.007 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.007 2.007 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31.4 31.4 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.007 2.007 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A99.788 99.788 0 0 1 7.858 2h.193zM6.4 5.209v4.818l4.157-2.408L6.4 5.209z"/>
+                            </svg>
+                        </a>
+                    </span>
+                </h3>
+            </div>
+            <ul class="familysite">
+                FAMILY SITE
+                <li>
+                    <ul class="fs-submenu">
+                        <li><a href="#">보성그룹</a></li>
+                        <li><a href="#">솔라시도CC</a></li>
+                        <li><a href="#">한양</a></li>
+                        <li><a href="#">한양수자인</a></li>
+                        <li><a href="#">보성산업</a></li>
+                        <li><a href="#">코리아에셋매니지먼트</a></li>
+                        <li><a href="#">파인힐스</a></li>
+                        <li><a href="#">파인비치</a></li>
+                        <li><a href="#">해원에스티</a></li>
+                        <li><a href="#">해원앰에스씨</a></li>
+                        <li><a href="#">여수국제항만</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </footer>
+</body>
+</html>

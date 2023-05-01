@@ -1,0 +1,42 @@
+@charset "utf-8";
+/* Roboto 연결 */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+/* Noto Sans Kr 연결 */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+/* Nanum Myeongjo 연결 */
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@400;700;800&display=swap');
+.material-icons{
+    font-family: 'Material Icons';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 24px;  /* Preferred icon size */
+    display: inline-block;
+    line-height: 1;
+    text-transform: none;
+    letter-spacing: normal;
+    word-wrap: normal;
+    white-space: nowrap;
+    direction: ltr;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Noto Sans KR', 'Roboto', sans-serif;
+    overflow-x: hidden;
+    -ms-overflow-style: none;
+}
+::-webkit-scrollbar{
+    display: none;
+}
+h1,h2,h3,h4,h5,h6,p,a,span,div,ul,li,select,option,input,button{
+    text-decoration: none;
+    color: #222;
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: -0.02em;
+}
+ul,li{
+    list-style: none;
+}

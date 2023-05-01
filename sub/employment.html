@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>태양의 도시 솔라시도</title>
+    <link rel="icon" href="../img/logo_favicon.png"/>
+    <!-- 제이쿼리 -->
+    <script src="../js/jquery.min.js"></script>
+    <script src="../js/jquery.mousewheel.min.js"></script>
+    <!-- 자바스크립트 -->
+    <script src="../js/layout.js"></script>
+    <!-- Material Icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- css -->
+    <link rel="stylesheet" type="text/css" href="../css/reset.css">
+    <link rel="stylesheet" type="text/css" href="../css/base.css">
+    <link rel="stylesheet" type="text/css" href="../css/layout.css">
+</head>
+<body>
+    <header style="background: white; border-bottom: 1px solid #ddd;">
+        <h1>
+            <a href="../index.html"><img src="../img/logo.png" alt="로고"></a>
+        </h1>
+        <div class="gnb">
+            <ul class="nav">
+                <li>
+                    <a href="#">사업개요</a>
+                    <ul class="submenu1" id="submenu1-1"></a>
+                        <li>
+                            <a href="./vision.html">
+                                비전
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./overview.html">
+                                도시소개
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./development.html">
+                                개발현황
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./target2030.html">
+                                TARGET2030
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">사업투자</a>
+                    <ul class="submenu1" id="submenu1-2"></a>
+                        <li>
+                            <a href="./residentialarea.html">
+                                주택단지
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./re100.html">
+                                RE100 산업단지
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./smartfarm.html">
+                                스마트팜
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./leisure.html">
+                                관광레져
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">소통과 교류</a>
+                    <ul class="submenu1" id="submenu1-3"></a>
+                        <li>
+                            <a href="./news.html" style="padding-left: 100px">
+                                뉴스
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./smartideasharing.html">
+                                SMART IDEA SHARING
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./employment.html">
+                                채용
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+            <ul class="sales">
+                <li>
+                    <a href="#">분양정보</a>
+                    <ul class="submenu2">
+                        <li>
+                            <a href="#">
+                                분양공고
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                공지사항
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                자료실
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <div class="sidemenu">
+            <input type="checkbox" name="lang" id="lang">
+            <label for="lang">
+                <span>KR<div class="triangle"></div></span>
+                <span>EN<div class="triangle"></div></span>
+            </label>
+            <a href="#">FAMILY
+                <img src="../img/bosung-symbol.png" alt="보성로고">
+            </a>
+        </div>
+        <div class="submenucover"></div>
+        <div class="tabletmenu">
+            <input type="checkbox" id="menu">
+            <label for="menu">
+                <img src="../img/btn_mobile_menu_s.png">
+                <img src="../img/close.png">
+            </label>
+            <div class="tabletsubmenu">
+                <ul>
+                    <li>
+                        <ul class="t-submenu">
+                            <a href="#">사업개요</a>
+                            <li><a href="./vision.html">비전</a></li>
+                            <li><a href="./overview.html">도시소개</a></li>
+                            <li><a href="./development.html">개발현황</a></li>
+                            <li><a href="./target2030.html">TARGET2030</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <ul class="t-submenu">
+                            <a href="#">사업투자</a>
+                            <li><a href="./residentialarea.html">주택단지</a></li>
+                            <li><a href="./re100.html">RE100 산업단지</a></li>
+                            <li><a href="./smartfarm.html">스마트팜</a></li>
+                            <li><a href="./leisure.html">관광레저</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <ul class="t-submenu">
+                            <a href="#">소통과 교류</a>
+                            <li><a href="./news.html">뉴스</a></li>
+                            <li><a href="./smartideasharing.html">SMART IDEA SHARING</a></li>
+                            <li><a href="./employment.html">채용</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <ul class="t-submenu">
+                            <a href="#">분양정보</a>
+                            <li><a href="#">분양공고</a></li>
+                            <li><a href="#">공지사항</a></li>
+                            <li><a href="#">자료실</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <div class="e-wrap">
+        <div>
+            <h2>
+                솔라시도를 스마트 도시공간을 함께 만들어갈<br>
+                스마트 기술과 서비스 분야의 인재를 모집합니다.
+            </h2>
+            <div class="recruit">
+                <img src="https://i.ibb.co/qxKwZkF/recruiting.png">
+                <img src="https://i.ibb.co/xmB5PTf/recruiting-m.png">
+            </div>
+            <div class="recruitbtn">
+                <button>
+                    <h4>
+                        인사/복리후생
+                    </h4>
+                    <img src="../img/diagonal-arrow.png">
+                </button>
+                <button>
+                    <h4>
+                        채용공고
+                    </h4>
+                    <img src="../img/diagonal-arrow.png">
+                </button>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div>
+            <h2>
+                <img src="../img/solaseado-w.png">
+                <span>
+                    © 2020 Solaseado.
+                </span>
+            </h2>
+            <div class="footer-info">
+                <h4>
+                    <span>본점</span>
+                    (59014) 전라남도 해남군 산이면 관광레저로 1998 (산이면)
+                </h4>
+                <h4>
+                    <span>서울</span>
+                    (05836) 서울 송파구 법원로 11길 12(문정동) 한양타워 9층
+                </h4>
+                <h5 style="padding-top:10px;">
+                    <span class="footer-txt">투자문의</span>
+                    1644-4228<span class="footer-line"></span><span class="footer-txt">TEL</span>061-812-8114<span class="footer-line"></span><span class="footer-txt">FAX</span>061-812-8115
+                </h5>
+                <h5>
+                    <span class="footer-txt">사업시행자</span>서남해안기업도시개발(주)<span class="footer-line"></span>사업자 등록번호<span class="footer-txt">408-81-74044</span>
+                </h5>
+                <h3>
+                    <a href="#">개인정보처리방침</a><span class="footer-line"></span></span><a href="#">투자문의</a>
+                    <span class="footer-sns">
+                        <a href="https://www.facebook.com/Solaseado_솔라시도-2386427968066241" style="margin-right: 8px;">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgba(255, 255, 255, 0.5)" class="bi bi-facebook" viewBox="0 0 16 16">
+                                <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"/>
+                            </svg>
+                        </a>
+                        <a href="https://www.youtube.com/channel/UCC00d2CHe2WHX4k-8EMQ2ng">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgba(255, 255, 255, 0.5)" class="bi bi-youtube" viewBox="0 0 16 16">
+                                <path d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.007 2.007 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.007 2.007 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31.4 31.4 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.007 2.007 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A99.788 99.788 0 0 1 7.858 2h.193zM6.4 5.209v4.818l4.157-2.408L6.4 5.209z"/>
+                            </svg>
+                        </a>
+                    </span>
+                </h3>
+            </div>
+            <ul class="familysite">
+                FAMILY SITE
+                <li>
+                    <ul class="fs-submenu">
+                        <li><a href="#">보성그룹</a></li>
+                        <li><a href="#">솔라시도CC</a></li>
+                        <li><a href="#">한양</a></li>
+                        <li><a href="#">한양수자인</a></li>
+                        <li><a href="#">보성산업</a></li>
+                        <li><a href="#">코리아에셋매니지먼트</a></li>
+                        <li><a href="#">파인힐스</a></li>
+                        <li><a href="#">파인비치</a></li>
+                        <li><a href="#">해원에스티</a></li>
+                        <li><a href="#">해원앰에스씨</a></li>
+                        <li><a href="#">여수국제항만</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </footer>
+</body>
+</html>

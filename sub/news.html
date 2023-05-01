@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>태양의 도시 솔라시도</title>
+    <link rel="icon" href="../img/logo_favicon.png"/>
+    <!-- 제이쿼리 -->
+    <script src="../js/jquery.min.js"></script>
+    <script src="../js/jquery.mousewheel.min.js"></script>
+    <!-- 자바스크립트 -->
+    <script src="../js/layout.js"></script>
+    <!-- Material Icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- css -->
+    <link rel="stylesheet" type="text/css" href="../css/reset.css">
+    <link rel="stylesheet" type="text/css" href="../css/base.css">
+    <link rel="stylesheet" type="text/css" href="../css/layout.css">
+</head>
+<body>
+    <header style="background: white; border-bottom: 1px solid #ddd;">
+        <h1>
+            <a href="../index.html"><img src="../img/logo.png" alt="로고"></a>
+        </h1>
+        <div class="gnb">
+            <ul class="nav">
+                <li>
+                    <a href="#">사업개요</a>
+                    <ul class="submenu1" id="submenu1-1"></a>
+                        <li>
+                            <a href="./vision.html">
+                                비전
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./overview.html">
+                                도시소개
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./development.html">
+                                개발현황
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./target2030.html">
+                                TARGET2030
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">사업투자</a>
+                    <ul class="submenu1" id="submenu1-2"></a>
+                        <li>
+                            <a href="./residentialarea.html">
+                                주택단지
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./re100.html">
+                                RE100 산업단지
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./smartfarm.html">
+                                스마트팜
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./leisure.html">
+                                관광레져
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">소통과 교류</a>
+                    <ul class="submenu1" id="submenu1-3"></a>
+                        <li>
+                            <a href="./news.html" style="padding-left: 100px">
+                                뉴스
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./smartideasharing.html">
+                                SMART IDEA SHARING
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./employment.html">
+                                채용
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+            <ul class="sales">
+                <li>
+                    <a href="#">분양정보</a>
+                    <ul class="submenu2">
+                        <li>
+                            <a href="#">
+                                분양공고
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                공지사항
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                자료실
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <div class="sidemenu">
+            <input type="checkbox" name="lang" id="lang">
+            <label for="lang">
+                <span>KR<div class="triangle"></div></span>
+                <span>EN<div class="triangle"></div></span>
+            </label>
+            <a href="#">FAMILY
+                <img src="../img/bosung-symbol.png" alt="보성로고">
+            </a>
+        </div>
+        <div class="submenucover"></div>
+        <div class="tabletmenu">
+            <input type="checkbox" id="menu">
+            <label for="menu">
+                <img src="../img/btn_mobile_menu_s.png">
+                <img src="../img/close.png">
+            </label>
+            <div class="tabletsubmenu">
+                <ul>
+                    <li>
+                        <ul class="t-submenu">
+                            <a href="#">사업개요</a>
+                            <li><a href="./vision.html">비전</a></li>
+                            <li><a href="./overview.html">도시소개</a></li>
+                            <li><a href="./development.html">개발현황</a></li>
+                            <li><a href="./target2030.html">TARGET2030</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <ul class="t-submenu">
+                            <a href="#">사업투자</a>
+                            <li><a href="./residentialarea.html">주택단지</a></li>
+                            <li><a href="./re100.html">RE100 산업단지</a></li>
+                            <li><a href="./smartfarm.html">스마트팜</a></li>
+                            <li><a href="./leisure.html">관광레저</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <ul class="t-submenu">
+                            <a href="#">소통과 교류</a>
+                            <li><a href="./news.html">뉴스</a></li>
+                            <li><a href="./smartideasharing.html">SMART IDEA SHARING</a></li>
+                            <li><a href="./employment.html">채용</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <ul class="t-submenu">
+                            <a href="#">분양정보</a>
+                            <li><a href="#">분양공고</a></li>
+                            <li><a href="#">공지사항</a></li>
+                            <li><a href="#">자료실</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <div id="wrap">
+        <section class="news1">
+            <div>
+                <h2>솔라시도 뉴스</h2>
+                <form action="#" method="POST">
+                    <select>
+                        <option>전체</option>
+                        <option>제목</option>
+                        <option>내용</option>
+                    </select>
+                    <span class="search">
+                        <input type="text">
+                        <button><img src="../img/bg_search_btn.png"></button>
+                    </span>
+                </form>
+            </div>
+            <div class="news1-1">
+                <div>
+                    <div class="news1-1img">
+                        <a href="#">
+                            <img src="https://i.ibb.co/cgDSjQx/news-1.png" style="top:-200px">
+                        </a>
+                    </div>
+                    <h2>
+                        <a href="#">
+                            [아주경제_보도기사]해남 '솔라시도'로 본 정원도시의 미래...
+                            '2021 정원도시 컨퍼런스' 개최
+                        </a>
+                    </h2>
+                    <h4>
+                        정원도시포럼이 오는 18일 '2021 정원도시 컨퍼런스(Garden City Conference)'를 
+                        연다고 14일 밝혔다. 정원도시포럼은 각계 전문가들이 모여 ..
+                    </h4>
+                </div>
+                <div>
+                    <div class="news1-1img">
+                        <a href="#">
+                            <img src="https://i.ibb.co/rMpVD6C/news-2.jpg">
+                        </a>
+                    </div>
+                    <h2>
+                        <a href="#">
+                            [뉴스1_보도기사]서남해안기업도시개발–정원도시포럼, 
+                            '솔라시도' 개발 MOU 체결
+                        </a>
+                    </h2>
+                    <h4>
+                        전라남도 해남의 스마트 정원도시 '솔라시도'를 개발 중인 서남해안기업도시개발이 
+                        지난 18일 정원도시포럼과 '정원도시 모델 개발 및 협력' 등에 관한 업무협약(MO..
+                    </h4>
+                </div>
+                <div>
+                    <div class="news1-1img">
+                        <a href="#">
+                            <img src="https://i.ibb.co/dphVM3c/news-3.jpg">
+                        </a>
+                    </div>
+                    <h2>
+                        <a href="#">
+                            [무등일보_보도기사]'블루시티' 솔라시도, 스마트 미래도시로 준비 '착착'
+                        </a>
+                    </h2>
+                    <h4>
+                        전남도의 블루시티 사업 중심에 선 '솔라시도'가 친환경 스마트 미래도시 구현에 속도를 내고 있다. 
+                        국내 최대 규모의 태양광발전소와 태양광 정원을 준공한 데 이어..
+                    </h4>
+                </div>
+                <div>
+                    <div class="news1-1img">
+                        <a href="#">
+                            <img src="https://i.ibb.co/1bhhLmq/news-4.jpg">
+                        </a>
+                    </div>
+                    <h2>
+                        <a href="#">
+                            [매일경제_보도기사]솔라시도 태양광발전소, 축구장 190개 면적에 태양광…녹지·공원 볼거리도 가득
+                        </a>
+                    </h2>
+                    <h4>
+                        가로세로 길이가 각각 1.2㎞. 190개 넘는 축구장이 들어갈 수 있는 규모다. 
+                        이곳에 태양광 모듈 25만장을 깔아 98㎿급 규모 발전소를 완공했다. 태양광이 만..
+                    </h4>
+                </div>
+                <div>
+                    <div class="news1-1img">
+                        <a href="#">
+                            <img src="https://i.ibb.co/N7Rq8zZ/news-5.jpg">
+                        </a>
+                    </div>
+                    <h2>
+                        <a href="#">
+                            [아주경제_보도기사]해남 '솔라시도'로 본 정원도시의 미래... 
+                            '2021 정원도시 컨퍼런스' 개최
+                        </a>
+                    </h2>
+                    <h4>
+                        솔라시도 단지는 '생산·충전·변전'을 한 번에 할 수 있는 체계를 갖췄다. 
+                        2만2900V의 전기를 자체 전기실에서 관리하고, 변전소를 통해 한전에 넘긴다. 오후 ..
+                    </h4>
+                </div>
+                <div>
+                    <div class="news1-1img">
+                        <a href="#">
+                            <img src="https://i.ibb.co/WDFBcxQ/news-6.jpg">
+                        </a>
+                    </div>
+                    <h2>
+                        <a href="#">
+                            [광주일보_보도기사]해남군·롯데렌탈, 차량 등록 협약…“지방세수 확충 기대”
+                        </a>
+                    </h2>
+                    <h4>
+                        해남군은 지난 29일 군청 상황실에서 롯데렌탈, 서남해안기업도시개발과 렌트 차량 등록 업무협약을 체결했다. 
+                        협약식에는 명현관 해남군수와 이승연 롯데렌탈 경영관리본..
+                    </h4>
+                </div>
+                <div>
+                    <div class="news1-1img">
+                        <a href="#">
+                            <img src="https://i.ibb.co/ZzRbW9Z/news-7.jpg">
+                        </a>
+                    </div>
+                    <h2>
+                        <a href="#">
+                            [e대한경제_보도기사]158만㎡에 모듈 25만장 98㎿ 설비…압도적 스케일 ‘시선 강탈’
+                        </a>
+                    </h2>
+                    <h4>
+                        지난달 30일 KTX목포역에서 약 20㎞를 이동해 전남 해남군 산이면 구성리 
+                        일원에 다다르자 끝이 보이지 않게 늘어선 태양광 발전 설비들이 시선을 압도했다. 그동..
+                    </h4>
+                </div>
+                <div>
+                    <div class="news1-1img">
+                        <a href="#">
+                            <img src="https://i.ibb.co/qDShrzh/news-8.jpg">
+                        </a>
+                    </div>
+                    <h2>
+                        <a href="#">
+                            [AI타임스_보도기사]전남도, 솔라시도 스마트시티 조성 ‘박차’
+                        </a>
+                    </h2>
+                    <h4>
+                        전남도가 블루 이코노미 사업의 일환으로 구상 중인 ‘솔라시도 스마트시티 프로젝트’가 가시화 되고 있다. 
+                        도는 지난 6월 태양광 발전소 준공을 시작으로 7월에는 ‘..
+                    </h4>
+                </div>
+                <div>
+                    <div class="news1-1img">
+                        <a href="#">
+                            <img src="https://i.ibb.co/VNVxd0V/news-9.jpg">
+                        </a>
+                    </div>
+                    <h2>
+                        <a href="#">
+                            [더벨_보도기사]보성산업, 신재생에너지와 연계…스마트시티 포부
+                        </a>
+                    </h2>
+                    <h4>
+                        보성산업은 국내 디벨로퍼 중에서 가장 적극적으로 데이터센터 개발을 주도하고 있다. 
+                        그룹내 상징적 프로젝트인 '솔라시도' 사업의 개발방안을 수립하던 차에 신사업 영..
+                    </h4>
+                </div>
+            </div>
+            <div class="news1-1 news1-2">
+                <div>
+                    <div class="news1-1img">
+                        <a href="#">
+                            <img src="https://i.ibb.co/MZ8T8fm/news-10.jpg">
+                        </a>
+                    </div>
+                    <h2>
+                        <a href="#">
+                            [전남일보_보도기사]해남 솔라시도에 'RE100 전용 시범국가산단' 추진
+                        </a>
+                    </h2>
+                    <h4>
+                        전남도가 해남 구성지구 일명 '솔라시도' 일원에 국가 주도 'RE100 전용 시범국가산업단지'
+                        (이하 RE100 전용산단)를 추진한다. 'RE100'은 기업에 필..
+                    </h4>
+                </div>
+                <div>
+                    <div class="news1-1img">
+                        <a href="#">
+                            <img src="https://i.ibb.co/hcNYm92/news-11.jpg">
+                        </a>
+                    </div>
+                    <h2>
+                        <a href="#">
+                            [뉴시스_보도기사]'전남 솔라시도' 글로벌 리조트 조성 투자유치 `청신호'
+                        </a>
+                    </h2>
+                    <h4>
+                        전남 영암·해남 관광레저형기업도시인 솔라시도 구성지구가 투자유치에 숨통이 트일 전망이다. 
+                        26일 전남도에 따르면 솔라시도 구성지구의 글로벌 헬스&힐링 리조..
+                    </h4>
+                </div>
+                <div>
+                    
+                </div>
+            </div>
+        </section>
+        <div class="nextbtn">
+            <button><img src="../img/left-chevron.png"></button>
+            <button class="pagebtn">1</button>
+            <button class="pagebtn">2</button>
+            <button><img src="../img/right-chevron.png" style="left: 1px;"></button>
+        </div>
+    </div>
+    <footer>
+        <div>
+            <h2>
+                <img src="../img/solaseado-w.png">
+                <span>
+                    © 2020 Solaseado.
+                </span>
+            </h2>
+            <div class="footer-info">
+                <h4>
+                    <span>본점</span>
+                    (59014) 전라남도 해남군 산이면 관광레저로 1998 (산이면)
+                </h4>
+                <h4>
+                    <span>서울</span>
+                    (05836) 서울 송파구 법원로 11길 12(문정동) 한양타워 9층
+                </h4>
+                <h5 style="padding-top:10px;">
+                    <span class="footer-txt">투자문의</span>
+                    1644-4228<span class="footer-line"></span><span class="footer-txt">TEL</span>061-812-8114<span class="footer-line"></span><span class="footer-txt">FAX</span>061-812-8115
+                </h5>
+                <h5>
+                    <span class="footer-txt">사업시행자</span>서남해안기업도시개발(주)<span class="footer-line"></span>사업자 등록번호<span class="footer-txt">408-81-74044</span>
+                </h5>
+                <h3>
+                    <a href="#">개인정보처리방침</a><span class="footer-line"></span></span><a href="#">투자문의</a>
+                    <span class="footer-sns">
+                        <a href="https://www.facebook.com/Solaseado_솔라시도-2386427968066241" style="margin-right: 8px;">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgba(255, 255, 255, 0.5)" class="bi bi-facebook" viewBox="0 0 16 16">
+                                <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"/>
+                            </svg>
+                        </a>
+                        <a href="https://www.youtube.com/channel/UCC00d2CHe2WHX4k-8EMQ2ng">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgba(255, 255, 255, 0.5)" class="bi bi-youtube" viewBox="0 0 16 16">
+                                <path d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.007 2.007 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.007 2.007 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31.4 31.4 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.007 2.007 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A99.788 99.788 0 0 1 7.858 2h.193zM6.4 5.209v4.818l4.157-2.408L6.4 5.209z"/>
+                            </svg>
+                        </a>
+                    </span>
+                </h3>
+            </div>
+            <ul class="familysite">
+                FAMILY SITE
+                <li>
+                    <ul class="fs-submenu">
+                        <li><a href="#">보성그룹</a></li>
+                        <li><a href="#">솔라시도CC</a></li>
+                        <li><a href="#">한양</a></li>
+                        <li><a href="#">한양수자인</a></li>
+                        <li><a href="#">보성산업</a></li>
+                        <li><a href="#">코리아에셋매니지먼트</a></li>
+                        <li><a href="#">파인힐스</a></li>
+                        <li><a href="#">파인비치</a></li>
+                        <li><a href="#">해원에스티</a></li>
+                        <li><a href="#">해원앰에스씨</a></li>
+                        <li><a href="#">여수국제항만</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </footer>
+</body>
+</html>
