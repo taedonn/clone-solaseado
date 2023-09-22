@@ -11,9 +11,9 @@ html,body{
     overflow: hidden;
     position: relative;
 }
-.videowrap iframe{
-    min-width: 1920px;
-    height: 200%;
+.videowrap video {
+    min-width: 100%;
+    height: 100%;
     position: absolute;
     left: 50%;
     top: 50%;
@@ -605,10 +605,11 @@ html,body{
         top: 70vh;
     }
     .videowrap .right h2{
-        display: block;
+        display: none;
         text-align: left;
     }
     .videowrap .right h4{
+        display: none;
         text-align: left;
     }
     .mbanner{
@@ -707,7 +708,7 @@ html,body{
     .videowrap{
         height: 50vh;
     }
-    .videowrap iframe{
+    .videowrap video {
         min-width: 1000px;
     }
     .videowrap>div{
