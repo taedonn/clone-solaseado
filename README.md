@@ -1,6 +1,6 @@
 # 솔라시도
 
-솔라시도 홈페이지 클론 코딩
+Solaseado website clone coding
 
 Live Demo : https://clone-solaseado.taedonn.com/
 
