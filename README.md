@@ -1,6 +1,6 @@
-# Solaseado
+# 솔라시도
 
-A simple clone-coded website that clones https://solaseado.com
+https://solaseado.com 클론 코딩한 웹사이트
 
 Live demo: https://clone-solaseado.taedonn.com/
 
