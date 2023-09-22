@@ -1,4 +1,4 @@
-# 솔라시도
+# Solaseado
 
 Solaseado website clone coding
 
