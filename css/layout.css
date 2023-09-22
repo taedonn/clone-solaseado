@@ -394,7 +394,7 @@ html,body{
 .slide2-2{
     width: 100%;
     background: #222;
-    background-image: url(https://i.ibb.co/cTZpPpD/tourBG2.png);
+    background-image: url(../img/tourBG2.png);
     background-size: 100%;
     background-position: -5% 62%;
     padding-top: 80px;
@@ -917,7 +917,7 @@ input[id=videovolume]:checked~label img:nth-of-type(2){
 }
 .v1-3{
     width: 100%;
-    background: #141414 url(https://i.ibb.co/S5ZRSnc/map-garden.jpg);
+    background: #141414 url(../img/map-garden.jpg);
     background-size: 2400px;
     background-position: center -150px;
     background-repeat: no-repeat;
@@ -1176,7 +1176,7 @@ input[id=videovolume]:checked~label img:nth-of-type(2){
         margin-bottom: 5%;
     }
     .v1-3{
-        background: #141414 url(https://i.ibb.co/7vCQ3pr/map-garden-m.jpg);
+        background: #141414 url(../img/map-garden-m.jpg);
         height: auto;
         background-size: 100%;
         background-position: center 252px;
@@ -2034,7 +2034,7 @@ input[id=videovolume]:checked~label img:nth-of-type(2){
     font-size: 52px;
     font-weight: 600;
     line-height: 1.2;
-    background: url(https://i.ibb.co/yp2Z5yX/dev-bg.jpg) no-repeat 50%;
+    background: url(../img/dev-bg.jpg) no-repeat 50%;
     color: white;
 }
 .dev-1{
@@ -2143,7 +2143,7 @@ input[id=videovolume]:checked~label img:nth-of-type(2){
 }
 .re100-1{
     width: 100%;
-    background-image: url(https://i.ibb.co/nz2ZVFQ/map-re100.png);
+    background-image: url(../img/map-re100.png);
     padding-top: 100px;
     box-sizing: border-box;
     height: 100vh;
@@ -2344,7 +2344,7 @@ input[id=videovolume]:checked~label img:nth-of-type(2){
     margin-bottom: 50px;
 }
 #sf-3{
-    background-image: url(https://i.ibb.co/h9Vm3D8/map-smartfarm2.png);
+    background-image: url(../img/map-smartfarm2.png);
     height: 100vh;
     background-color: #141414;
     background-size: 2300px;
@@ -2573,7 +2573,7 @@ input[id=videovolume]:checked~label img:nth-of-type(2){
     margin-bottom: 60px;
 }
 .leisure0{
-    background-image: url(https://i.ibb.co/w7J082G/map-golf.png);
+    background-image: url(../img/map-golf.png);
 }
 .leisure .re100-1>div{
     max-width: 960px;
@@ -2634,13 +2634,13 @@ input[id=videovolume]:checked~label img:nth-of-type(2){
     margin-bottom: 100px;
 }
 .leisure2{
-    background-image: url(https://i.ibb.co/JkQKr91/map-resort.png);
+    background-image: url(../img/map-resort.png);
 }
 .leisure3{
-    background-image: url(https://i.ibb.co/5rV7dvv/map-hotel.png);
+    background-image: url(../img/map-hotel.png);
 }
 .leisure4{
-    background-image: url(https://i.ibb.co/9VBW6qH/map-retail.png);
+    background-image: url(../img/map-retail.png);
 }
 .leisure5{
     width: 100%;
@@ -2662,7 +2662,7 @@ input[id=videovolume]:checked~label img:nth-of-type(2){
     width: 47.5%;
 }
 .leisure6{
-    background-image: url(https://i.ibb.co/yPH8RM1/map-marina.png);
+    background-image: url(../img/map-marina.png);
 }
 .leisure1>div>div:nth-of-type(3){
     display: none;
