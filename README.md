@@ -1,6 +1,4 @@
-# Solaseado
-
-Solaseado website clone coding
+# Solaseado clone coding
 
 Live Demo : https://clone-solaseado.taedonn.com/
 
